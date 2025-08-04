@@ -1,53 +1,106 @@
-## Project Setup
+# Task Manager API
 
-- Accept the Github classroom assignment here: https://classroom.github.com/a/8FaMiv9J
+## Overview
 
-- Review the project requirements and plan your approach.
+This is a simple Task Manager REST API built with Express.js. It allows you to create, read, update, and delete tasks in memory. Each task has an ID, title, description, completion status, creation date, and priority level. The API is designed for learning and demonstration purposes.
 
-- Set up the basic project structure and Install Express.js and other necessary NPM packages (npm install express).
+## Setup Instructions
 
+1. **Clone the repository**
+   ```sh
+   git clone <your-repo-url>
+   cd task-manager-api-ry2kik
+   ```
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
+3. **Start the server**
+   ```sh
+   npm start
+   ```
+   The server will run on `http://localhost:3000`.
 
-## Implement CRUD Operations (In-Memory)
+4. **Run tests**
+   ```sh
+   npm test
+   ```
 
-### Task schema:
+## API Endpoints
 
+### 1. Get All Tasks
+- **Endpoint:** `GET /tasks`
+- **Query Parameters:**
+  - `completed` (optional): `true` or `false` to filter by completion status
+  - `sort` (optional): `asc` or `desc` to sort by creation date
+- **Example:**
+  ```sh
+  curl http://localhost:3000/tasks
+  curl http://localhost:3000/tasks?completed=true
+  curl http://localhost:3000/tasks?sort=asc
+  ```
 
-```json
-{
-  "id": 2,
-  "title": "Create a new project",
-  "description": "Create a new project using Magic",
-  "completed": false
-}
-```
+### 2. Get Task by ID
+- **Endpoint:** `GET /tasks/:taskId`
+- **Example:**
+  ```sh
+  curl http://localhost:3000/tasks/1
+  ```
 
-- Implement ``` GET /tasks: ``` Retrieve all tasks.
+### 3. Get Tasks by Priority
+- **Endpoint:** `GET /tasks/priority/:level`
+- **Allowed Levels:** `low`, `medium`, `high`
+- **Example:**
+  ```sh
+  curl http://localhost:3000/tasks/priority/medium
+  ```
 
-- Implement ``` GET /tasks/:id: ``` Retrieve a specific task by its ID.
+### 4. Create a New Task
+- **Endpoint:** `POST /tasks`
+- **Body:**
+  ```json
+  {
+    "title": "Task Title",
+    "description": "Task Description",
+    "completed": false,
+    "priority": "medium" // optional, defaults to "medium"
+  }
+  ```
+- **Example:**
+  ```sh
+  curl -X POST http://localhost:3000/tasks \
+    -H "Content-Type: application/json" \
+    -d '{"title":"New Task","description":"Description","completed":false}'
+  ```
 
-- Implement ``` POST /tasks: ``` Create a new task with the required fields (title, description, completed).
+### 5. Update a Task
+- **Endpoint:** `PUT /tasks/:taskId`
+- **Body:** Same as POST
+- **Example:**
+  ```sh
+  curl -X PUT http://localhost:3000/tasks/1 \
+    -H "Content-Type: application/json" \
+    -d '{"title":"Updated Task","description":"Updated Description","completed":true}'
+  ```
 
-- Implement ``` PUT /tasks/:id: ``` Update an existing task by its ID.
+### 6. Delete a Task
+- **Endpoint:** `DELETE /tasks/:taskId`
+- **Example:**
+  ```sh
+  curl -X DELETE http://localhost:3000/tasks/1
+  ```
 
-- Implement ``` DELETE /tasks/:id: ``` Delete a task by its ID.
+## Testing the API
+- You can use [Postman](https://www.postman.com/) or `curl` to test the endpoints.
+- Automated tests are provided in the `test/` folder and can be run with `npm test`.
 
-- Test all endpoints using Postman or curl to ensure proper functionality.
+## Notes
+- All data is stored in memory and will reset when the server restarts.
+- Input validation and error handling are implemented for all endpoints.
 
+---
 
-## Input Validation & Error Handling
-
-- Implement input validation for creating and updating tasks.
-    - Ensure the title and description are not empty.
-    - Ensure the completed status is a boolean value.
-
-- Implement error handling for invalid requests (e.g., 404 for non-existent task IDs, 400 for invalid input).
-
-- Test the API using Postman or curl to ensure validation and error handling work correctly.
-
-
-## Optional Extensions (Filtering, Sorting, Priority)
-
-- Implement filtering by completion status for ```GET /tasks``` (e.g., ```GET /tasks?completed=true```).
+Feel free to modify and extend the API for your learning needs!
 
 - Implement sorting by creation date for ```GET /tasks```.
 
