@@ -1,0 +1,62 @@
+[dotenv@17.2.1] injecting env (1) from .env -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+TAP version 14
+# Subtest: POST /tasks
+    ok 1 - should be equal
+    1..1
+ok 1 - POST /tasks # time=19.201ms
+
+# Subtest: POST /tasks with invalid data
+    ok 1 - should be equal
+    1..1
+ok 2 - POST /tasks with invalid data # time=1.791ms
+
+# Subtest: GET /tasks
+    ok 1 - should be equal
+    ok 2 - specified property should be defined own property
+    ok 3 - specified property should be defined own property
+    ok 4 - specified property should be defined own property
+    ok 5 - specified property should be defined own property
+    ok 6 - type is number
+    ok 7 - type is string
+    ok 8 - type is string
+    ok 9 - type is boolean
+    1..9
+ok 3 - GET /tasks # time=1.581ms
+
+# Subtest: GET /tasks/:id
+    ok 1 - should be equal
+    ok 2 - should match pattern
+    1..2
+ok 4 - GET /tasks/:id # time=1.947ms
+
+# Subtest: GET /tasks/:id with invalid id
+    ok 1 - should be equal
+    1..1
+ok 5 - GET /tasks/:id with invalid id # time=0.953ms
+
+# Subtest: PUT /tasks/:id
+    ok 1 - should be equal
+    1..1
+ok 6 - PUT /tasks/:id # time=1.151ms
+
+# Subtest: PUT /tasks/:id with invalid id
+    ok 1 - should be equal
+    1..1
+ok 7 - PUT /tasks/:id with invalid id # time=0.918ms
+
+# Subtest: PUT /tasks/:id with invalid data
+    ok 1 - should be equal
+    1..1
+ok 8 - PUT /tasks/:id with invalid data # time=1.108ms
+
+# Subtest: DELETE /tasks/:id
+    ok 1 - should be equal
+    1..1
+ok 9 - DELETE /tasks/:id # time=0.819ms
+
+# Subtest: DELETE /tasks/:id with invalid id
+    ok 1 - should be equal
+    1..1
+ok 10 - DELETE /tasks/:id with invalid id # time=0.816ms
+
+1..10

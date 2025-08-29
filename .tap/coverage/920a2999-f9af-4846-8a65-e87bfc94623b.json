@@ -1,0 +1,328 @@
+{
+  "result": [
+    {
+      "scriptId": "819",
+      "url": "file:///Users/raktimabhoghosh/Desktop/airtribe_assignment/task-manager-api-ry2kik/app.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 503,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "917",
+      "url": "file:///Users/raktimabhoghosh/Desktop/airtribe_assignment/task-manager-api-ry2kik/routes/tasks.route.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 664,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "918",
+      "url": "file:///Users/raktimabhoghosh/Desktop/airtribe_assignment/task-manager-api-ry2kik/controller/tasks.controller.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 4222,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "retriveTasks",
+          "ranges": [
+            {
+              "startOffset": 230,
+              "endOffset": 1011,
+              "count": 1
+            },
+            {
+              "startOffset": 393,
+              "endOffset": 693,
+              "count": 0
+            },
+            {
+              "startOffset": 738,
+              "endOffset": 953,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 625,
+              "endOffset": 676,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 767,
+              "endOffset": 945,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "retriveTasksByID",
+          "ranges": [
+            {
+              "startOffset": 1069,
+              "endOffset": 1343,
+              "count": 2
+            },
+            {
+              "startOffset": 1207,
+              "endOffset": 1342,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 1161,
+              "endOffset": 1189,
+              "count": 4
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "retriveTasksByPriority",
+          "ranges": [
+            {
+              "startOffset": 1419,
+              "endOffset": 1802,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "postTasks",
+          "ranges": [
+            {
+              "startOffset": 1844,
+              "endOffset": 2487,
+              "count": 2
+            },
+            {
+              "startOffset": 2077,
+              "endOffset": 2231,
+              "count": 1
+            },
+            {
+              "startOffset": 2232,
+              "endOffset": 2235,
+              "count": 0
+            },
+            {
+              "startOffset": 2391,
+              "endOffset": 2402,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "updateTasks",
+          "ranges": [
+            {
+              "startOffset": 2551,
+              "endOffset": 3475,
+              "count": 3
+            },
+            {
+              "startOffset": 2665,
+              "endOffset": 2768,
+              "count": 0
+            },
+            {
+              "startOffset": 2987,
+              "endOffset": 3073,
+              "count": 1
+            },
+            {
+              "startOffset": 3073,
+              "endOffset": 3170,
+              "count": 2
+            },
+            {
+              "startOffset": 3170,
+              "endOffset": 3407,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 3113,
+              "endOffset": 3141,
+              "count": 4
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "deleteTaskByID",
+          "ranges": [
+            {
+              "startOffset": 3532,
+              "endOffset": 4081,
+              "count": 2
+            },
+            {
+              "startOffset": 3646,
+              "endOffset": 3749,
+              "count": 0
+            },
+            {
+              "startOffset": 3846,
+              "endOffset": 4080,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 3789,
+              "endOffset": 3817,
+              "count": 3
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "919",
+      "url": "file:///Users/raktimabhoghosh/Desktop/airtribe_assignment/task-manager-api-ry2kik/utils/Constants.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 682,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "920",
+      "url": "file:///Users/raktimabhoghosh/Desktop/airtribe_assignment/task-manager-api-ry2kik/utils/validation.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 830,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "validateTaskInput",
+          "ranges": [
+            {
+              "startOffset": 26,
+              "endOffset": 792,
+              "count": 5
+            },
+            {
+              "startOffset": 154,
+              "endOffset": 228,
+              "count": 0
+            },
+            {
+              "startOffset": 273,
+              "endOffset": 315,
+              "count": 4
+            },
+            {
+              "startOffset": 316,
+              "endOffset": 352,
+              "count": 4
+            },
+            {
+              "startOffset": 359,
+              "endOffset": 439,
+              "count": 1
+            },
+            {
+              "startOffset": 439,
+              "endOffset": 481,
+              "count": 4
+            },
+            {
+              "startOffset": 481,
+              "endOffset": 538,
+              "count": 1
+            },
+            {
+              "startOffset": 538,
+              "endOffset": 572,
+              "count": 3
+            },
+            {
+              "startOffset": 572,
+              "endOffset": 768,
+              "count": 0
+            },
+            {
+              "startOffset": 768,
+              "endOffset": 791,
+              "count": 3
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 39780.746834,
+  "source-map-cache": {}
+}
