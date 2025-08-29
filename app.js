@@ -12,9 +12,9 @@ app.use('/tasks', taskRouter)
 
 app.listen(port, (err) => {
     if (err) {
-        console.log('Error in connecting with the server: ', err);
+        return console.log('Something bad happened', err);
     }
-    console.log(`We are listening at port number ${ port }...`);
+    console.log(`Server is listening on ${port}`);
 });
 
 module.exports = app;
