@@ -1,9 +1,9 @@
-require('dotenv').config();
+// require('dotenv').config();
 const express = require('express');
 const app = express();
 const taskRouter = require('./routes/tasks.route');
 
-const port = process.env.PORT;
+const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
